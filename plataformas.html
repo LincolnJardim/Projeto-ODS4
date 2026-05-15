@@ -3,73 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Ensino Gratuito</title>
-
-    <style>
-        div.trilha{
-            display: flex;
-            justify-content: space-around;
-        }
-
-        img.icone {
-            max-width: 120px;
-            max-height: 120px;
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>Plataformas de Ensino Gratuitas</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Sobre</a>
-        <a href="programaçao.html">O que é programação</a>
-        <a href="plataformas.html">Plataformas gratuitas</a>
-        <a href="ferramentas.html">Ferramentas usadas por professores</a>
-        <a href="trabalho.html">Mercado de trabalho</a>
-        <a href="galeria.html">Galeria de fotos do projeto</a>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="programacao.html">O que é programação</a></li>
+            <li><a href="plataformas.html">Plataformas gratuitas</a></li>
+            <li><a href="ferramentas.html">Ferramentas usadas por professores</a></li>
+            <li><a href="trabalho.html">Mercado de trabalho</a></li>
+            <li><a href="galeria.html">Galeria de fotos do projeto</a></li>
+        </ul>
     </nav>
 
     <main>
-        <section>
+        <section class="introducao">
             <h2>Curso em Vídeo</h2>
-            <p>Uma das melhores plataformas de ensino sobre tecnologia, onde comecei a dar os primeiros passos reais em programação e desenvolvimento. Professor Gustavo Guanabara.</p>
+            <p>Uma das melhores plataformas de ensino sobre tecnologia, onde comecei a dar os primeiros passos reais em programação e desenvolvimento. Ministrado pelo professor Gustavo Guanabara.</p>
             <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Vídeo</a>
-            <h2>Por onde começar?</h2>
+            
+            <!-- Corrigido o fechamento da tag de h2 para h3 -->
+            <h3>Por onde começar?</h3>
             <p>Uma trilha de estudos recomendada para iniciantes e também para quem deseja reforçar os fundamentos da programação. Os cursos vão desde conceitos básicos até conteúdos intermediários. Clique nas imagens para acessar os cursos.</p>
-            <div class="trilha">
-                <a href="https://www.youtube.com/watch?v=8mei6uVttho&list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV" target="_blank">
-                    <img class="icone" src="imagens/tipos-de-algoritmo-1.jpg" alt="Curso de algoritmo">
-                </a>
-                <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank">
-                    <img class="icone" src="imagens/html_css.png" alt="Curso HTML e CSS">
-                </a>
-                <a href="https://www.youtube.com/watch?v=xEKo29OWILE&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA" target="_blank">
-                    <img class="icone" src="imagens/github-logo-git-hub-icon-with-text-on-white-background-free-vector.jpg" alt="Curso Git e GitHub">
-                </a>
-                <a href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_blank">
-                    <img class="icone" src="imagens/Javascript-736400_960_720.png" alt="Curso de JavaScript">
-                </a>
-                <a href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0" target="_blank">
-                    <img class="icone" src="imagens/Python.png" alt="Curso de Python">
-                </a>
-            </div>
         </section>
+        
+        <div class="trilha">
+            <a class="card-trilha" href="https://www.youtube.com/watch?v=8mei6uVttho&list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV" target="_blank">
+                <img class="icone" src="imagens/tipos-de-algoritmo-1.jpg" alt="Curso de algoritmo">
+                <p>Curso de algoritmo</p>
+            </a>
+            <a class="card-trilha" href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank">
+                <img class="icone" src="imagens/html_css.png" alt="Curso HTML e CSS">
+                <p>Curso HTML e CSS</p>
+            </a>
+            <a class="card-trilha" href="https://www.youtube.com/watch?v=xEKo29OWILE&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA" target="_blank">
+                <img class="icone" src="imagens/github-logo-git-hub-icon-with-text-on-white-background-free-vector.jpg" alt="Curso Git e GitHub">
+                <p>Curso Git e GitHub</p>
+            </a>
+            <a class="card-trilha" href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_blank">
+                <img class="icone" src="imagens/Javascript-736400_960_720.png" alt="Curso de JavaScript">
+                <p>Curso de JavaScript</p>
+            </a>
+            <a class="card-trilha" href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0" target="_blank">
+                <img class="icone" src="imagens/Python.png" alt="Curso de Python">
+                <p>Curso de Python</p>
+            </a>
+        </div>
 
-        <section>
+        <section class="introducao">
             <h2>Eu capacito</h2>
             <p>Formações certificadas e gratuitas das principais empresas de tecnologia do mundo. Uma iniciativa da FIAP e do Instituto Itaqui para tornar o futuro mais inclusivo e digital.</p>
-            
-            <a href="https://www.eucapacito.com.br/">Acesse aqui!</a>
+            <!-- Adicionado target="_blank" -->
+            <a href="https://www.eucapacito.com.br/" target="_blank">Acesse aqui!</a>
         </section>
 
-        <section>
+        <section class="introducao">
             <h2>Scratch</h2>
-            <p>Crie estórias, jogos e animações. Partilhe com outros em todo o mundo</p>
-
-            <a href="https://scratch.mit.edu/">Acesse aqui!</a>
+            <p>Crie histórias, jogos e animações. Compartilhe com outras pessoas ao redor do mundo.</p>
+            <!-- Adicionado target="_blank" -->
+            <a href="https://scratch.mit.edu/" target="_blank">Acesse aqui!</a>
         </section>
     </main>
+
+
+    <footer>
+        <p>Projeto Extensionista - ODS 4 | Tecnologia na Educação | Lincoln Jardim</p>
+    </footer>
 </body>
 </html>
