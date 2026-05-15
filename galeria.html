@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Galeria</title>
 </head>
 <body>
@@ -10,35 +11,79 @@
         <h1>Galeria de Fotos</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Sobre</a>
-        <a href="programaçao.html">O que é programação</a>
-        <a href="plataformas.html">Plataformas gratuitas</a>
-        <a href="ferramentas.html">Ferramentas usadas por professores</a>
-        <a href="trabalho.html">Mercado de trabalho</a>
-        <a href="galeria.html">Galeria de fotos do projeto</a>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="programacao.html">O que é programação</a></li>
+            <li><a href="plataformas.html">Plataformas gratuitas</a></li>
+            <li><a href="ferramentas.html">Ferramentas usadas por professores</a></li>
+            <li><a href="trabalho.html">Mercado de trabalho</a></li>
+            <li><a href="galeria.html">Galeria de fotos do projeto</a></li>
+        </ul>
     </nav>
 
     <main>
+        <section class="introducao">
+            <h2>Registro do Projeto</h2>
+            <p>
+                As imagens abaixo registram parte das observações realizadas
+                durante o desenvolvimento do projeto extensionista na escola.
+                Os registros mostram os espaços utilizados pelos alunos e
+                professores, além da infraestrutura tecnológica disponível.
+            </p>
+        </section>
+
         <section class="container-galeria">
-            <img class="icone" src="imagens/drive-download-20260513T135226Z-3-001/IMG_20251114_143836.jpg" alt="">
+            <figure>
+                <img class="foto-galeria" src="imagens/registros/area_externa.jpg" alt="Foto de uma área externa da escola">
+                <figcaption>Área externa da escola utilizada para o convívio dos alunos.</figcaption>
+            </figure>
 
-            <img class="icone" src="imagens/drive-download-20260513T135226Z-3-001/IMG_20251114_144106.jpg" alt="">
+            <figure>
+                <img class="foto-galeria" src="imagens/registros/biblioteca.jpg" alt="Foto da biblioteca da escola">
+                <figcaption>Biblioteca com o acervo disponível para pesquisa e leitura.</figcaption>
+            </figure>
 
-            <img class="icone" src="imagens/drive-download-20260513T135226Z-3-001/IMG_20251114_144126.jpg" alt="">
+            <figure>
+                <img class="foto-galeria" src="imagens/registros/computador.jpg" alt="Foto do computador usado pelos alunos">
+                <figcaption>Equipamentos utilizados durante as atividades práticas de tecnologia.</figcaption>
+            </figure>
 
-            <img class="icone" src="imagens/drive-download-20260513T135226Z-3-001/IMG_20251114_144656.jpg" alt="">
+            <figure>
+                <img class="foto-galeria" src="imagens/registros/conteudo.jpg" alt="Foto do conteúdo aplicado em sala de aula">
+                <figcaption>Apresentação do material de apoio na sala de aula.</figcaption>
+            </figure>
 
-            <img class="icone" src="imagens/drive-download-20260513T135226Z-3-001/IMG_20251114_144801.jpg" alt="">
+            <figure>
+                <img class="foto-galeria" src="imagens/registros/professora.jpg" alt="Foto da professora aplicando conteúdo">
+                <figcaption>Professora orientando a turma durante o projeto.</figcaption>
+            </figure>
 
-            <img class="icone" src="imagens/drive-download-20260513T135226Z-3-001/IMG_20251114_144820.jpg" alt="">
+            <figure>
+                <img class="foto-galeria" src="imagens/registros/jardim_externo.jpg" alt="Foto de um jardim externo na escola">
+                <figcaption>Área verde e espaço de descompressão da escola.</figcaption>
+            </figure>
 
-            <img class="icone" src="imagens/drive-download-20260513T135226Z-3-001/IMG_20251114_144838.jpg" alt="">
+            <figure>
+                <img class="foto-galeria" src="imagens/registros/sala_de_aula.jpg" alt="Foto da sala de aula">
+                <figcaption>Estrutura da sala de aula preparada para receber as apresentações.</figcaption>
+            </figure>
 
-            <img class="icone" src="imagens/drive-download-20260513T135226Z-3-001/IMG_20251114_151849.jpg" alt="">
+            <figure>
+                <!-- Nome do arquivo ajustado com o 'r' -->
+                <img class="foto-galeria" src="imagens/registros/sala_informatica.jpg" alt="Foto da sala de informática">
+                <figcaption>Laboratório de informática disponível para os estudantes.</figcaption>
+            </figure>
 
-            <img class="icone" src="imagens/drive-download-20260513T135226Z-3-001/IMG_20251114_151921.jpg" alt="">
+            <figure>
+                <img class="foto-galeria" src="imagens/registros/sala_professores.jpg" alt="Foto da sala dos professores">
+                <figcaption>Espaço reservado para o planejamento da equipe docente.</figcaption>
+            </figure>
         </section>
     </main>
+
+    <footer>
+        <p>Projeto Extensionista - ODS 4 | Tecnologia na Educação | Lincoln Jardim</p>
+    </footer>
 </body>
 </html>
