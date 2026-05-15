@@ -3,30 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Ferramentas</title>
 </head>
 <body>
     <header>
-        <h1>Ferramentas usadas pelos professores</h2>
+        <!-- Corrigido o fechamento da tag de h2 para h1 -->
+        <h1>Ferramentas usadas pelos professores</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Sobre</a>
-        <a href="programaçao.html">O que é programação</a>
-        <a href="plataformas.html">Plataformas gratuitas</a>
-        <a href="ferramentas.html">Ferramentas usadas por professores</a>
-        <a href="trabalho.html">Mercado de trabalho</a>
-        <a href="galeria.html">Galeria de fotos do projeto</a>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="programacao.html">O que é programação</a></li>
+            <li><a href="plataformas.html">Plataformas gratuitas</a></li>
+            <li><a href="ferramentas.html">Ferramentas usadas por professores</a></li>
+            <li><a href="trabalho.html">Mercado de trabalho</a></li>
+            <li><a href="galeria.html">Galeria de fotos do projeto</a></li>
+        </ul>
     </nav>
 
     <main>
-        <h2>Khan Academy</h2>
+        <section class="introducao">
+            <h2>Khan Academy</h2>
+            <!-- Parágrafo descritivo adicionado -->
+            <p>Uma plataforma educacional gratuita que oferece exercícios práticos, vídeos instrucionais e um painel de aprendizado personalizado para que os alunos estudem no seu próprio ritmo, dentro e fora da sala de aula.</p>
+            <!-- Adicionado target="_blank" -->
+            <a class="botao" href="https://pt.khanacademy.org/" target="_blank">Acesse aqui!</a>
+        </section>
 
-        <a href="https://pt.khanacademy.org/">Acesse aqui!</a>
-
-        <h2>Kahoot</h2>
-
-        <a href="https://kahoot.it/">Acesse aqui!</a>
+        <section class="introducao">
+            <h2>Kahoot</h2>
+            <!-- Parágrafo descritivo adicionado -->
+            <p>Uma plataforma de aprendizado baseada em jogos e gamificação. É uma excelente ferramenta para professores criarem questionários interativos, tornando a revisão de conteúdos muito mais engajadora e divertida para a turma.</p>
+            <!-- Adicionado target="_blank" -->
+            <a class="botao" href="https://kahoot.it/" target="_blank">Acesse aqui!</a>
+        </section>
     </main>
+
+    <footer>
+        <p>Projeto Extensionista - ODS 4 | Tecnologia na Educação | Lincoln Jardim</p>
+    </footer>
 </body>
 </html>
