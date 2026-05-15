@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Mercado de Trabalho</title>
 </head>
 <body>
@@ -10,17 +11,19 @@
         <h1>Mercado de trabalho</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Sobre</a>
-        <a href="programaçao.html">O que é programação</a>
-        <a href="plataformas.html">Plataformas gratuitas</a>
-        <a href="ferramentas.html">Ferramentas usadas por professores</a>
-        <a href="trabalho.html">Mercado de trabalho</a>
-        <a href="galeria.html">Galeria de fotos do projeto</a>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="programacao.html">O que é programação</a></li>
+            <li><a href="plataformas.html">Plataformas gratuitas</a></li>
+            <li><a href="ferramentas.html">Ferramentas usadas por professores</a></li>
+            <li><a href="trabalho.html">Mercado de trabalho</a></li>
+            <li><a href="galeria.html">Galeria de fotos do projeto</a></li>
+        </ul>
     </nav>
 
     <main>
-        <section>
+        <section class="introducao">
             <h2>Principais Áreas na Tecnologia</h2>
 
             <p>A área de tecnologia possui diversas oportunidades de carreira e continua crescendo no Brasil. Além de oferecer salários competitivos, muitas profissões permitem trabalho remoto, aprendizado contínuo e atuação em empresas de diferentes setores, como bancos, educação, saúde, jogos e inteligência artificial.</p>
@@ -86,20 +89,36 @@
 
         </section>
 
-        <section>
+        <section class="container-empresas">
             <h2>Empresas que incentivam jovens talentos</h2>
 
-            <p>Dio: <a href="https://www.dio.me/" target="_blank">Acesse aqui!</a></p>
+            <article class="card-empresa">
+                <!-- Alterado de <p> para <h3> -->
+                <h3>DIO</h3>
+                <a class="botao" href="https://www.dio.me/" target="_blank">Acesse aqui!</a>
+            </article>
+            
+            <article class="card-empresa">
+                <!-- Alterado de <p> para <h3> -->
+                <h3>NUBE</h3>
+                <a class="botao" href="https://www.nube.com.br/" target="_blank">Acesse aqui!</a>
+            </article>
 
-            <p>NUBE: <a href="https://www.nube.com.br/" target="_blank">Acesse aqui!</a></p>
-
-            <p>Santander Open Academy: <a href="https://www.santanderopenacademy.com/pt_br/index.html" target="_blank">Acesse aqui!</a></p>
+            <article class="card-empresa">
+                <!-- Alterado de <p> para <h3> -->
+                <h3>Santander Open Academy</h3>
+                <a class="botao" href="https://www.santanderopenacademy.com/pt_br/index.html" target="_blank">Acesse aqui!</a>
+            </article>
         </section>
 
-        <section>
+        <section class="introducao">
             <h2>Perspectiva de futuro</h2>
             <p>O mercado de tecnologia continua em expansão e cada vez mais empresas dependem de sistemas, aplicativos, inteligência artificial e análise de dados. Além das oportunidades no Brasil, muitos profissionais também trabalham remotamente para empresas internacionais. A área valoriza principalmente conhecimento prático, projetos pessoais, portfólio e aprendizado contínuo.</p>
         </section>
     </main>
+
+    <footer>
+        <p>Projeto Extensionista - ODS 4 | Tecnologia na Educação | Lincoln Jardim</p>
+    </footer>
 </body>
 </html>
