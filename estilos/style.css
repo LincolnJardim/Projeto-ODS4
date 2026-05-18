@@ -1,0 +1,176 @@
+/* ===== VARIÁVEIS ===== */
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --cor-primaria: #2563EB;
+    --cor-secundaria: #1E3A8A;
+    --cor-destaque: #10B981;
+    --cor-fundo: #6bb5ff;
+    --cor-texto: #1E293B;
+    --cor-texto-secundario: #475569;
+    --cor-branca: #FFFFFF;
+
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+/* ===== RESET ===== */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ===== BODY ===== */
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+}
+
+/* ===== HEADER ===== */
+
+header.cabecalho {
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    color: var(--cor-branca);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.315);
+    text-align: center;
+    
+
+    padding: 30px;
+
+}
+
+header.cabecalho > h1 {
+    padding: 20px;
+}
+
+/* ===== MENU ===== */
+
+.menu {
+    background-color: var(--cor-primaria);
+    
+}
+
+.menu a {
+    color: var(--cor-branca);
+    text-decoration: none;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.menu > a:hover {
+    background-color: var(--cor-destaque);
+    padding: 10px;
+    transition-duration: 0.5s;
+    
+}
+
+/* ===== MAIN ===== */
+
+.introducao {
+    background-color: var(--cor-branca);
+    padding: 20px;
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.295);
+
+}
+
+.container-sobremim {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background-color: var(--cor-fundo);
+}
+
+.card-sobremim {
+    background-color: var(--cor-branca);
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.295);
+    
+    
+
+    width: 400px;
+
+    text-align: center;
+    color: var(--cor-texto);
+    font-size: 1em;
+    font-family: var(--fonte-principal);
+    line-height: 2;
+    font-weight: bolder;
+    
+}
+
+
+.container-projeto {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background-color: var(--cor-destaque);
+
+    margin: 10px;
+
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
+}
+
+.container-projeto > h2 {
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.315);
+    padding: 20px;
+    color: var(--cor-texto);
+    font-size: 2em;
+}
+
+.container-projeto > h3 {
+    text-align: center;
+    color: var(--cor-texto);
+    font-size: 1.5em;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.315);
+    padding: 20px;
+}
+
+.card-projeto {
+    background-color: var(--cor-branca);
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.295);
+    
+    
+
+    width: 400px;
+
+    text-align: center;
+    color: var(--cor-texto);
+    font-size: 1em;
+    font-family: var(--fonte-principal);
+    line-height: 2;
+    font-weight: bolder;
+    
+}
+
+/* ===== FOOTER ===== */
+
+
+footer {
+    background-color: var(--cor-secundaria);
+    margin-top: 20px;
+    padding: 20px;
+
+    text-align: center;
+    color: var(--cor-branca);
+}
