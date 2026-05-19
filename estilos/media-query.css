@@ -43,9 +43,6 @@ Grande telas: acima de 1440px
         font-family: var(--fonte-principal);
     }
 
-    header {
-
-    }
 
     .menu {
         display: flex;
