@@ -1,0 +1,187 @@
+/* ===== VARIÁVEIS ===== */
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --cor-primaria: #2563EB;
+    --cor-secundaria: #1E3A8A;
+    --cor-destaque: #10B981;
+    --cor-fundo: #6bb5ff;
+    --cor-texto: #1E293B;
+    --cor-texto-secundario: #475569;
+    --cor-branca: #FFFFFF;
+
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+/* ===== RESET ===== */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints
+Pequenas telas: até 480px
+Celular: 481px – 768px
+Tablets: 769px – 1024px
+Desktop: 1025px – 1440px
+Grande telas: acima de 1440px
+*/
+
+
+/* ===== TABLET ===== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: var(--cor-secundaria);
+        font-family: var(--fonte-principal);
+    }
+
+    header {
+
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+
+        margin: auto;
+
+        text-align: center;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.651);
+    }
+
+    main {
+        background-color: var(--cor-branca);
+        margin: 30px auto 30px auto;
+        width: 900px;
+        max-width: 100vw;
+        padding: 40px;
+    }
+
+    .introducao {
+        background-color: var(--cor-fundo);
+        margin: auto;
+        border-radius: 10px;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.336);
+        font-size: 1.2em;
+
+
+        width: 700px;
+        max-width: 100vw;
+        
+    }
+
+    .introducao:hover {
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+
+    .container-sobremim{
+        display: flex;
+        flex-direction: row;
+        background-color: var(--cor-fundo);
+        padding: 50px;
+        margin-top: 20px;
+        gap: 20px;
+
+        border-radius: 10px;
+        box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.363);
+    }
+
+    .card-sobremmim {
+        justify-content: center;
+        
+    }
+
+    .card-sobremim:hover {
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+
+    .card-projeto:hover {
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+}
+
+/* ===== DESKTOP ===== */
+
+@media screen and (min-width: 1025px) {
+
+    
+    .layout-principal {
+        display: flex;
+        width: 100%;
+    }
+
+    
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: var(--cor-secundaria);
+        
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: stretch;  
+        gap: 20px;
+        padding: 40px 20px;
+    }
+    
+    .menu > a:hover {
+        border-radius: 5px;
+    }
+    
+    .conteudo-direito {
+        flex: 1;              
+        margin-left: 250px;   
+        
+        display: flex;
+        flex-direction: column; 
+        min-height: 100vh;
+    }
+
+    
+    header {
+        font-size: 1.5em;
+    }
+
+    .introducao {
+        margin: 30px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.377);
+    }
+
+    .container-sobremim {
+        background-color: var(--cor-primaria);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        border-radius: 5px;
+        box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.329);
+
+        width: 1000px;
+        margin: auto;
+    }
+
+    .card-sobremim {
+        height: 450px;
+    }
+
+    .card-sobremim:hover {
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+
+}
